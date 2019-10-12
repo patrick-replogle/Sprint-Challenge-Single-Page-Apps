@@ -6,7 +6,7 @@ const Card = styled.div`
   flex-direction: column;
   alight-items: center;
   justify-content: center;
-  width: 30%;
+  width: 50%;
   background-color: rgba(114, 121, 34, 0.9);
   color: #5eb7b3;
   margin: 20px 20px;
