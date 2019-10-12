@@ -13,7 +13,6 @@ export default function SearchForm() {
     axios
       .get(`https://rickandmortyapi.com/api/character/?name=${name}`)
       .then(response => {
-        console.log(response.data.results);
         setCharacter(response.data.results);
       })
       .catch(error => {
@@ -27,7 +26,12 @@ export default function SearchForm() {
 
   const handleSubmit = event => {
     event.preventDefault();
-    setName(input);
+    if (input.length === 0) {
+      alert("Please type first name into box");
+    } else {
+      setName(input);
+      setInput("");
+    }
   };
 
   return (
@@ -43,7 +47,7 @@ export default function SearchForm() {
           id="name"
           name="name"
           value={input}
-          placeholder="rick"
+          placeholder="type first name here"
         />
         <Button type="submit">Submit</Button>
       </form>

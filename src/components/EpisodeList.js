@@ -9,7 +9,6 @@ const EpisodeList = () => {
     axios
       .get("https://rickandmortyapi.com/api/episode/")
       .then(response => {
-        console.log(response.data.results);
         setEpisodes(response.data.results);
       })
       .catch(error => {

@@ -27,11 +27,11 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Explain benefit(s) using `client-side routing`?
 
+> Answer:
+
 In client side routing, the entire web page or application is loaded all at once on the first request to the server. While the initial load time will be slower than server side routing, all the following routing and transitions will happen in the browser, making for a much faster and seamless experience for the user when navigating thru the application.
 
 Another pro to client side routing is that there are a plethora of javascript libraries, including React JS that developers can use to help create robust single page applications. This pro could also be considered a con though since a library will generally be required to build a single page application.
-
-> Answer:
 
 ## Project Set Up
 
