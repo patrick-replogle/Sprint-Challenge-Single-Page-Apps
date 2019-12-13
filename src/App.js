@@ -14,7 +14,7 @@ export default function App() {
     <main>
       <Header />
       <Nav />
-      <Route path="/" component={WelcomePage} />
+      <Route exact path="/" component={WelcomePage} />
       <Route path="/characters" component={CharacterList} />
       <Route path="/episodes" component={EpisodeList} />
       <Route path="/locations" component={LocationsList} />
