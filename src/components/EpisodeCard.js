@@ -6,7 +6,7 @@ const Card = styled.div`
   flex-direction: column;
   alight-items: center;
   justify-content: center;
-  width: 60%;
+  width: 50%;
   background-color: rgba(114, 121, 34, 0.9);
   color: #5eb7b3;
   margin: 20px 20px;
@@ -15,13 +15,15 @@ const Card = styled.div`
   font-weight: bold;
 `;
 
-export default function LocationCard({ loc }) {
+const EpisodeCard = ({ episode }) => {
   return (
     <Card>
-      <h1>Name: {loc.name}</h1>
-      <p>Population: {loc.residents.length}</p>
-      <p>Dimension: {loc.dimension}</p>
-      <p>Type: {loc.type}</p>
+      <h1>Name: {episode.name}</h1>
+      <p>Air Date: {episode.air_date}</p>
+      <p>Episode Number: {episode.episode}</p>
+      <p>{episode.characters.length} characters featured in episode</p>
     </Card>
   );
-}
+};
+
+export default EpisodeCard;
